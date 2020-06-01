@@ -4,8 +4,8 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
-import guru.springframework.msscbrewery.web.model.Customer;
+import guru.springframework.msscbrewery.web.model.CustomerDto;
 
 public interface CustomerService {
-    Customer getCustomerById(UUID id);
+    CustomerDto getCustomerById(UUID id);
 }

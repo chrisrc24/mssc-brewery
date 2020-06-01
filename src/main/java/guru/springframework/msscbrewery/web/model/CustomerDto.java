@@ -8,10 +8,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-Customertructor
-Customerstructor
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
-public class Customer {
+public class CustomerDto {
     private UUID id;
     private String name;
 }

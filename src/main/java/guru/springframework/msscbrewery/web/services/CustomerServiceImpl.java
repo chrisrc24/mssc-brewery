@@ -4,14 +4,14 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
-import guru.springframework.msscbrewery.web.model.Customer;
+import guru.springframework.msscbrewery.web.model.CustomerDto;
 
 @Service
 public class CustomerServiceImpl implements CustomerService {
 
     @Override
-    public Customer getCustomerById(UUID id) {
-        return Customer.builder()
+    public CustomerDto getCustomerById(UUID id) {
+        return CustomerDto.builder()
         .id(UUID.randomUUID())
         .name("Some Dude")
         .build();
